@@ -1,0 +1,31 @@
+{
+    _id: VARIABLE_CLUSTERNAME_VARIABLE,
+    version: 1.0,
+    protocolVersion: 1,
+    writeConcernMajorityJournalDefault: true,
+    configsvr: false,
+    members: [
+      {
+        _id: VARIABLE_IDOFPOD_VARIABLE,
+        host: VARIABLE_HOSTNAMEOFPOD_VARIABLE,
+        arbiterOnly: false,
+        buildIndexes: true,
+        hidden: false,
+        priority: 0,
+        tags: { "SERVICE_NAME": "VARIABLE_SERVICENAME_VARIABLE" },
+        slaveDelay: 0,
+        votes: 0
+      },
+      ...
+    ],
+    settings: {
+      chainingAllowed : <boolean>,
+      heartbeatIntervalMillis : <int>,
+      heartbeatTimeoutSecs: <int>,
+      electionTimeoutMillis : <int>,
+      catchUpTimeoutMillis : <int>,
+      getLastErrorModes : <document>,
+      getLastErrorDefaults : <document>,
+      replicaSetId: <ObjectId>
+    }
+  }
